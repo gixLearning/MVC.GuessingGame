@@ -50,3 +50,9 @@ ul.skill-icons {
 .no-left-padding {
     padding-left: 0;
 }
+img.menu-image-small {
+    float: left;
+    margin: 2px 5px;
+    height: 46px;
+    width: 46px;
+}

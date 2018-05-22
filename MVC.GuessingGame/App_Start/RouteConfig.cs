@@ -14,6 +14,12 @@ namespace MVC.GuessingGame
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "GuessingGame",
+                url: "GuessingGame/",
+                defaults: new { controller = "Page", action = "GuessingGame" }
+                );
+
+            routes.MapRoute(
                 name: "Fevercheck",
                 url: "fevercheck/",
                 defaults: new { controller = "Page", action = "Fevercheck" }

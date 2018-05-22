@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace MVC.GuessingGame.Models {
+﻿namespace MVC.GuessingGame.Models {
     public static class Fever {
         private const float FEVER_THRESHOLD_C = 38f;
         private const float FEVER_THRESHOLD_F = 100.4f;
@@ -13,7 +8,8 @@ namespace MVC.GuessingGame.Models {
         public static bool HasFever(float temperature, bool useFarenheit) {
             if (!useFarenheit) {
                 return temperature > FEVER_THRESHOLD_C;
-            } else {
+            }
+            else {
                 return temperature > FEVER_THRESHOLD_F;
             }
         }

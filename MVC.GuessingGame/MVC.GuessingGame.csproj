@@ -92,6 +92,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\devicons.min.css" />
+    <Content Include="Content\images\cat.png" />
     <Content Include="Content\samus.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\devicons.svg" />
@@ -132,6 +133,7 @@
     <Content Include="Views\Page\Projects.cshtml" />
     <Content Include="Views\Shared\_FooterView.cshtml" />
     <Content Include="Views\Page\Fevercheck.cshtml" />
+    <Content Include="Views\Page\GuessingGame.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -153,7 +155,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50019</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

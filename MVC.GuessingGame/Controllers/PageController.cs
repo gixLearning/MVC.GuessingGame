@@ -46,5 +46,31 @@ namespace MVC.GuessingGame.Controllers
 
             return View();
         }
+
+        //GET
+        public ActionResult GuessingGame() {
+            Session["randomNumber"] = new Random().Next(0, 100);
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult GuessingGame(int? numberguess) {
+            
+            if (!numberguess.HasValue) {
+                Session.Remove("timesGuessed");
+                Session["displayError"] = "The game was reset because a number was not provided";
+                return RedirectToAction("GuessingGame");
+            }
+
+            Session["displayError"] = null;
+
+            if (Session["timesGuessed"] != null) {
+                Session["timesGuessed"] = Convert.ToInt32(Session["timesGuessed"]) + 1;
+            } else {
+                Session["timesGuessed"] = 1;
+            }            
+            return View(numberguess);
+        }
     }
 }
